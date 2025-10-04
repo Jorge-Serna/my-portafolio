@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+@import 'styles/mixins';
+
+@include font-face('nunito', '/quicksand-font/Quicksand-Light.ttf', 300);
+@include font-face('nunito', '/quicksand-font/Quicksand-Regular.ttf', 400);
+@include font-face('nunito', '/quicksand-font/Quicksand-Medium.ttf', 500);
+@include font-face('nunito', '/quicksand-font/Quicksand-SemiBold.ttf', 600);
+@include font-face('nunito', '/quicksand-font/Quicksand-Bold.ttf', 700);
+
+
+:root {
+  --bs-font-sans-serif: 'nunito', sans-serif, Arial;
+}
+
+$primary: #3388ff;
+$secondary: #ffcc00;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.cursor-pointer{
+  cursor: pointer;
+}
