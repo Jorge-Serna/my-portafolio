@@ -4,22 +4,24 @@
 
 @import 'styles/mixins';
 
-@include font-face('nunito', '/quicksand-font/Quicksand-Light.ttf', 300);
-@include font-face('nunito', '/quicksand-font/Quicksand-Regular.ttf', 400);
-@include font-face('nunito', '/quicksand-font/Quicksand-Medium.ttf', 500);
-@include font-face('nunito', '/quicksand-font/Quicksand-SemiBold.ttf', 600);
-@include font-face('nunito', '/quicksand-font/Quicksand-Bold.ttf', 700);
+@include font-face('quicksand', '/quicksand-font/Quicksand-Light.ttf', 300);
+@include font-face('quicksand', '/quicksand-font/Quicksand-Regular.ttf', 400);
+@include font-face('quicksand', '/quicksand-font/Quicksand-Medium.ttf', 500);
+@include font-face('quicksand', '/quicksand-font/Quicksand-SemiBold.ttf', 600);
+@include font-face('quicksand', '/quicksand-font/Quicksand-Bold.ttf', 700);
 
 
 :root {
-  --bs-font-sans-serif: 'nunito', sans-serif, Arial;
+  --bs-font-sans-serif: 'quicksand', sans-serif, Arial;
 }
 
-$primary: #3388ff;
+$primary: #3e8dfc;
+$blue-darker: #206bd3;
 $secondary: #ffcc00;
 
 $theme-colors: (
   "primary": $primary,
+  "blue-darker": $blue-darker,
   "secondary": $secondary,
   "gray-100": $gray-100,
   "gray-200": $gray-200,
