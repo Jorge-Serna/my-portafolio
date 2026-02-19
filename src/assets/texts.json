@@ -1,0 +1,62 @@
+[
+    {
+        "id":"en",
+        "sections": [
+            {
+                "name":"home",
+                "heroTitle":"software developer",
+                "heroText":"I work passionetly with the development of web applications"
+            },
+            {
+                "id":"about"
+            },
+            {
+                "id":"projects"
+            },
+            {
+                "id":"sidebar"
+            }
+            
+        ]
+    },
+    {
+        "id":"es",
+        "sections": [
+            {
+                "name":"home",
+                "heroTitle":"desarrollador de software",
+                "heroText":"trabajo de todo corazón en el desarrollo de aplicaciones web"
+            },
+            {
+                "id":"about"
+            },
+            {
+                "id":"projects"
+            },
+            {
+                "id":"sidebar"
+            }
+            
+        ]
+    },
+    {
+        "id":"de",
+        "sections": [
+            {
+                "name":"home",
+                "heroTitle":"software entwickler",
+                "heroText":"Ich beschäftige mich leidenschaftlich mit der Entwicklung von Webanwendungen"
+            },
+            {
+                "id":"about"
+            },
+            {
+                "id":"projects"
+            },
+            {
+                "id":"sidebar"
+            }
+            
+        ]
+    }
+]

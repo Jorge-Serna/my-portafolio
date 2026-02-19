@@ -1,0 +1,19 @@
+.side-bar{
+    width: 200px; 
+    height: 100%; 
+    background-color: var(--bs-primary);
+}
+
+.item{
+
+    transition: background-color 0.1s linear;
+
+}
+
+.item:hover{
+    background-color: var(--bs-tertiary)
+}
+
+.selected{
+    background-color: var(--bs-tertiary)
+}

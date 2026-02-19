@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/mixins';
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-@import 'styles/mixins';
+
 
 @include font-face('quicksand', '/quicksand-font/Quicksand-Light.ttf', 300);
 @include font-face('quicksand', '/quicksand-font/Quicksand-Regular.ttf', 400);
@@ -15,22 +15,54 @@
   --bs-font-sans-serif: 'quicksand', sans-serif, Arial;
 }
 
-$primary: #3e8dfc;
-$blue-darker: #206bd3;
-$secondary: #ffcc00;
+$primary: #ffffff;
+$secondary: #ff631b;
+$black: #000000;
 
 $theme-colors: (
-  "primary": $primary,
-  "blue-darker": $blue-darker,
-  "secondary": $secondary,
   "gray-100": $gray-100,
   "gray-200": $gray-200,
   "gray-300": $gray-300,
-  "gray-400": $gray-400
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+
+  "primary": $primary,
+  "secondary": $secondary,
+  "black": $black,
 );
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #ffffff;
+  --bs-secondary: #ff631b;
+  --bs-tertiary: #ffe5d2;
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #000000;
+  --btn-toggle-theme: #ffe5d2;
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: #483888;
+  --bs-secondary: #ff631b;
+  --bs-tertiary: #6959a2;
+  --bs-body-bg: #483888;
+  --bs-body-color: #ffffff;
+  --btn-toggle-theme: #6959a2;
 }

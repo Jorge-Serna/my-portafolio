@@ -19,11 +19,10 @@ export class NavbarComponent {
     this.language = value;
   }
 
-  toggleTheme(e: Event){
-    const th = e.target as HTMLElement;
-    this.theme = th.id.includes('dark') ? 'dark' : 'light';
+  setTheme(e: Event){
+    const element = e.target as HTMLElement;
+    this.theme = element.id == 'dark' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-bs-theme', this.theme);
-
   }
 
 }
