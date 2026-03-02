@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import texts from '../../assets/texts.json';
+import { CoreService } from '../core.service';
 
 
 @Component({
@@ -11,8 +11,18 @@ import texts from '../../assets/texts.json';
 })
 export class HomeComponent implements OnInit {
 
+  section;
+
+  constructor( private coreService: CoreService ){}
+
   ngOnInit(): void {
-    console.log(texts)
+
+    this.coreService.language$.subscribe( data => {
+      var x = data;
+      this.section = x?.sections.find( s => s.id === 'home')
+
+    })
+    
   }
 
 

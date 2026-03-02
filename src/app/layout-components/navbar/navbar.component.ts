@@ -1,22 +1,45 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { CoreService } from '../../core.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NgFor],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 
-  language: string = 'EN'
+  section;
+  language: string;
   theme: 'light' | 'dark' = 'light';
 
-  changeLanguage(e: Event){
-    var element:any = e.target as HTMLElement;
-    var value:any = element.id;
-    this.language = value;
+  constructor( private coreService: CoreService ){}
+
+  ngOnInit(): void {
+
+    this.coreService.language$.subscribe( data => {
+      var x = data;
+      this.section = x?.sections.find( s => s.id === 'navbar')
+    })
+
+    var local = localStorage.getItem('js-app-language');
+    this.language = local ? local : 'en';
+
+    this.coreService.setLanguage( this.language );
+    
+  }
+
+
+  setLanguage(id){
+    
+    
+    this.language = id;
+
+
+    this.coreService.setLanguage( id )
   }
 
   setTheme(e: Event){

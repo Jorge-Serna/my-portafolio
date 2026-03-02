@@ -3,9 +3,9 @@
         "id":"en",
         "sections": [
             {
-                "name":"home",
-                "heroTitle":"software developer",
-                "heroText":"I work passionetly with the development of web applications"
+                "id":"home",
+                "heroTitle":"I'm a software developer",
+                "heroText":"UX/UI designer, full-satack web developer, databases administrator"
             },
             {
                 "id":"about"
@@ -14,7 +14,42 @@
                 "id":"projects"
             },
             {
-                "id":"sidebar"
+                "id":"sidebar",
+                "linkButtons": [
+                    {
+                        "btn": "Home",
+                        "bsClass": "bi-house-fill",
+                        "link":"home"
+                    },
+                    {
+                        "btn": "About",
+                        "bsClass": "bi-person-walking",
+                        "link":"about"
+                    },
+                    {
+                        "btn": "Projects",
+                        "bsClass": "bi-file-earmark-code-fill",
+                        "link":"projects"
+                    }
+                ]
+            },
+            {
+                "id":"navbar",
+                "languagesOptions": [
+                    {
+                        "id":"en",
+                        "opt": "english"
+                    },
+                    {
+                        "id":"es",
+                        "opt": "spanish"
+                    },
+                    {
+                        "id":"de",
+                        "opt": "german"
+                    }
+                ]
+
             }
             
         ]
@@ -23,9 +58,9 @@
         "id":"es",
         "sections": [
             {
-                "name":"home",
-                "heroTitle":"desarrollador de software",
-                "heroText":"trabajo de todo corazón en el desarrollo de aplicaciones web"
+                "id":"home",
+                "heroTitle":"Soy desarrollador de software",
+                "heroText":"Diseñador UX/UI, full-stack en desarrollo web, administrador de bases de datos"
             },
             {
                 "id":"about"
@@ -34,7 +69,42 @@
                 "id":"projects"
             },
             {
-                "id":"sidebar"
+                "id":"sidebar",
+                "linkButtons": [
+                    {
+                        "btn": "Inicio",
+                        "bsClass": "bi-house-fill",
+                        "link":"home"
+                    },
+                    {
+                        "btn": "Sobre mí",
+                        "bsClass": "bi-person-walking",
+                        "link":"about"
+                    },
+                    {
+                        "btn": "Proyectos",
+                        "bsClass": "bi-file-earmark-code-fill",
+                        "link":"projects"
+                    }
+                ]
+            },
+            {
+                "id":"navbar",
+                "languagesOptions": [
+                    {
+                        "id":"en",
+                        "opt": "inglés"
+                    },
+                    {
+                        "id":"es",
+                        "opt": "español"
+                    },
+                    {
+                        "id":"de",
+                        "opt": "alemán"
+                    }
+                ]
+
             }
             
         ]
@@ -43,9 +113,9 @@
         "id":"de",
         "sections": [
             {
-                "name":"home",
-                "heroTitle":"software entwickler",
-                "heroText":"Ich beschäftige mich leidenschaftlich mit der Entwicklung von Webanwendungen"
+                "id":"home",
+                "heroTitle":"Ich bin Software Entwickler",
+                "heroText":"UX/UI Designer, full-satack Web-Entwicklung, Datenbank Verwalter"
             },
             {
                 "id":"about"
@@ -54,7 +124,42 @@
                 "id":"projects"
             },
             {
-                "id":"sidebar"
+                "id":"sidebar",
+                "linkButtons": [
+                    {
+                        "btn": "Startseite",
+                        "bsClass": "bi-house-fill",
+                        "link":"home"
+                    },
+                    {
+                        "btn": "Über mich",
+                        "bsClass": "bi-person-walking",
+                        "link":"about"
+                    },
+                    {
+                        "btn": "Projekte",
+                        "bsClass": "bi-file-earmark-code-fill",
+                        "link":"projects"
+                    }
+                ]
+            },
+            {
+                "id":"navbar",
+                "languagesOptions": [
+                    {
+                        "id":"en",
+                        "opt": "Englisch"
+                    },
+                    {
+                        "id":"es",
+                        "opt": "Spanisch"
+                    },
+                    {
+                        "id":"de",
+                        "opt": "Deutsch"
+                    }
+                ]
+
             }
             
         ]

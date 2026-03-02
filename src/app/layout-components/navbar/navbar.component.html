@@ -34,26 +34,19 @@ style="background-color: var(--bs-primary);">
           <i class="bi bi-globe2"></i>
         </button>
         <ul class="dropdown-menu">
-          <li>
-            <button class="dropdown-item" type="button" id="ES" (click)="changeLanguage($event)">
-              Spanish
-            </button>
-          </li>
-          <li>
-            <button class="dropdown-item" type="button" id="EN" (click)="changeLanguage($event)">
-              English
-            </button>
-          </li>
-          <li>
-            <button class="dropdown-item" type="button" id="DE" (click)="changeLanguage($event)">
-              German
-            </button>
-          </li>
+
+          <ng-container *ngFor="let ln of section?.languagesOptions" >
+            <li>
+              <button class="dropdown-item text-capitalize" type="button" (click)="setLanguage(ln.id)">
+                {{ln?.opt}}
+              </button>
+            </li>
+          </ng-container>
         </ul>
       </div>
 
       <div class="d-flex align-items-center justify-content-center" style="width: 4rem;">
-        <div class="fw-medium">{{language}}</div>
+        <div class="fw-medium text-uppercase">{{language}}</div>
       </div>
 
       <div class="d-flex">
