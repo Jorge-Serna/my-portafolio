@@ -4,11 +4,10 @@ import { CoreService } from '../../core.service';
 import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-side-bar',
-  standalone: true,
-  imports: [RouterLink, NgFor],
-  templateUrl: './side-bar.component.html',
-  styleUrl: './side-bar.component.scss'
+    selector: 'app-side-bar',
+    imports: [RouterLink, NgFor],
+    templateUrl: './side-bar.component.html',
+    styleUrl: './side-bar.component.scss'
 })
 export class SideBarComponent implements OnInit {
 
