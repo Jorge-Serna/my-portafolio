@@ -4,7 +4,7 @@
         "sections": [
             {
                 "id":"home",
-                "heroTitle":"I'm a software developer",
+                "heroTitle":"Software developer",
                 "heroText":"UX/UI designer, full-satack web developer, databases administrator"
             },
             {
@@ -59,7 +59,7 @@
         "sections": [
             {
                 "id":"home",
-                "heroTitle":"Soy desarrollador de software",
+                "heroTitle":"Desarrollador de software",
                 "heroText":"Diseñador UX/UI, full-stack en desarrollo web, administrador de bases de datos"
             },
             {
@@ -114,7 +114,7 @@
         "sections": [
             {
                 "id":"home",
-                "heroTitle":"Ich bin Software Entwickler",
+                "heroTitle":"Software Entwickler",
                 "heroText":"UX/UI Designer, full-satack Web-Entwicklung, Datenbank Verwalter"
             },
             {

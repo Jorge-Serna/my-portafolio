@@ -9,7 +9,7 @@ import { SideBarComponent } from "../side-bar/side-bar.component";
   standalone: true,
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss',
-  imports: [RouterOutlet, NavbarComponent, SideBarComponent]
+  imports: [RouterOutlet, NavbarComponent, SideBarComponent, FooterComponent]
 })
 export class LayoutComponent {
 

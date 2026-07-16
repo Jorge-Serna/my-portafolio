@@ -11,3 +11,28 @@
 .text-container{
     width: 600px;
 }
+
+.img-container img{
+    transition: transform 0.5s ease;
+}
+
+.img-container img:hover{
+    transform: scale(1.05);
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0.5;
+        scale: 0.8;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}

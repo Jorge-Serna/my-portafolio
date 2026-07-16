@@ -16,7 +16,7 @@
 }
 
 $primary: #ffffff;
-$secondary: #ff631b;
+$secondary: #ff6a00;
 $black: #000000;
 
 $theme-colors: (
@@ -46,6 +46,10 @@ $theme-colors: (
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.fs-7{
+  font-size: 14px;
 }
 
 :root,
