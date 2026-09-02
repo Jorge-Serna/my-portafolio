@@ -34,6 +34,15 @@ $theme-colors: (
   "indigo-500": $indigo-500,
   "indigo-600": $indigo-600,
 
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+
+
+
   "yellow-400": $yellow-400,
   "yellow-500": $yellow-500,
 
@@ -72,4 +81,8 @@ $theme-colors: (
   --bs-body-bg: #483888;
   --bs-body-color: #ffffff;
   --btn-toggle-theme: #6959a2;
+}
+
+.bg-tertiary{
+    background-color: var(--bs-tertiary);
 }

@@ -5,15 +5,14 @@
 }
 
 .item{
-
-    transition: background-color 0.1s linear;
-
+    text-decoration: none;
+    transition: background-color 0.2s linear;
 }
 
 .item:hover{
     background-color: var(--bs-tertiary)
 }
 
-.selected{
+a.active{
     background-color: var(--bs-tertiary)
 }
