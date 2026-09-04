@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { CoreService } from '../core.service';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 
@@ -11,21 +10,8 @@ import { RouterLink } from '@angular/router';
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
 
-  section;
-
-  constructor( private coreService: CoreService ){}
-
-  ngOnInit(): void {
-
-    this.coreService.language$.subscribe( data => {
-      var x = data;
-      this.section = x?.sections.find( s => s.id === 'home')
-
-    })
-    
-  }
 
 
 

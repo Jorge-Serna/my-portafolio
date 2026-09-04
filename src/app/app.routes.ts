@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectMbeComponent } from './projects/project-mbe/project-mbe.component';
 import { ProjectsMenuComponent } from './projects/projects-menu/projects-menu.component';
+import { BlogComponent } from './blog/blog.component';
 
 export const routes: Routes = [
     { path: '', component: LayoutComponent, children: [
@@ -34,6 +35,10 @@ export const routes: Routes = [
                     component: ProjectMbeComponent
                 }
             ]
+        },
+        {
+            path: 'blog',
+            component: BlogComponent
         }
     ] },
 ];

@@ -3,22 +3,28 @@
     <aside class="px-3 pt-4" style="position: sticky; top: 0">
         <nav class="d-flex flex-column">
             <a 
-            class="item px-3 py-2 rounded-2 my-1" 
+            class="nav-link px-3 py-2 rounded-2 my-1" 
             [routerLink]="['/home']"
             routerLinkActive="active">
-                Home
+                {{ 'NAVBAR.HOME' | translate }}
             </a>
             <a 
-            class="item px-3 py-2 rounded-2 my-1" 
+            class="nav-link px-3 py-2 rounded-2 my-1" 
             [routerLink]="['/about']"
             routerLinkActive="active">
-                About
+                {{ 'NAVBAR.ABOUT' | translate }}
             </a>
             <a 
-            class="item px-3 py-2 rounded-2 my-1" 
+            class="nav-link px-3 py-2 rounded-2 my-1" 
             [routerLink]="['/projects']"
             routerLinkActive="active">
-                Projects
+                {{ 'NAVBAR.PROJECTS' | translate }}
+            </a>
+            <a 
+            class="nav-link px-3 py-2 rounded-2 my-1" 
+            [routerLink]="['/blog']"
+            routerLinkActive="active">
+                {{ 'NAVBAR.BLOG' | translate }}
             </a>
         </nav>
     </aside>

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import texts from '../assets/texts.json';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -14,7 +13,7 @@ export class CoreService {
 
   constructor(){
 
-    this.languagesArray = texts;
+    this.languagesArray = {};
 
   }
 

@@ -17,6 +17,7 @@
 
 $primary: #ffffff;
 $secondary: #ff6a00;
+$tertiary: #ffe5d2;
 $black: #000000;
 
 $theme-colors: (
@@ -41,14 +42,13 @@ $theme-colors: (
   "blue-500": $blue-500,
   "blue-600": $blue-600,
 
-
-
   "yellow-400": $yellow-400,
   "yellow-500": $yellow-500,
 
   "primary": $primary,
   "secondary": $secondary,
   "black": $black,
+  "tertiary": $tertiary
 );
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
@@ -72,6 +72,7 @@ $theme-colors: (
   --bs-body-bg: #ffffff;
   --bs-body-color: #000000;
   --btn-toggle-theme: #ffe5d2;
+  --bs-nav-link-color: var(--bs-body-color);
 }
 
 [data-bs-theme="dark"] {
@@ -81,8 +82,9 @@ $theme-colors: (
   --bs-body-bg: #483888;
   --bs-body-color: #ffffff;
   --btn-toggle-theme: #6959a2;
+  --bs-nav-link-color: var(--bs-body-color);
 }
 
-.bg-tertiary{
-    background-color: var(--bs-tertiary);
-}
+// .bg-tertiary{
+//     background-color: var(--bs-tertiary);
+// }

@@ -16,17 +16,48 @@ style="background-color: var(--bs-primary);">
 
     <div class="collapse navbar-collapse" id="nav-bar">
       <div class="navbar-nav d-lg-none">
-        <a class="nav-link" routerLink="/home">Home</a>
-        <a class="nav-link" routerLink="/about">About</a>
-        <a class="nav-link" routerLink="/projects">Projects</a>
+        <a class="nav-link" routerLink="home">Home</a>
+        <a class="nav-link" routerLink="about">About</a>
+        <a class="nav-link" routerLink="projects">Projects</a>
+        <div class="d-flex justify-content-center">
+
+          <div class="dropdown">
+
+            <button class="btn btn-yellow-400 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe2"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <button class="dropdown-item text-capitalize" type="button" (click)="setLanguage('')">
+                  English
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center" style="width: 4rem;">
+            <div class="fw-medium text-uppercase">En</div>
+          </div>
+
+          <div class="d-flex">
+            <button
+            id="light" 
+            class="px-3 rounded-start-pill d-flex align-items-center btn-theme"
+            (click)="onChangeTheme($event)">
+              <i class="bi bi-brightness-high lh-1"></i>
+            </button>
+            <button
+            id="dark" (click)="onChangeTheme($event)"
+            class="px-3 rounded-end-pill d-flex align-items-center btn-theme">
+              <i class="bi bi-moon-stars lh-1"></i>
+            </button>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <div class="d-flex">
-
-      <div class="px-3">
-        
-      </div>
+    <div class="d-none d-lg-flex">
 
       <div class="dropdown">
 
@@ -34,30 +65,28 @@ style="background-color: var(--bs-primary);">
           <i class="bi bi-globe2"></i>
         </button>
         <ul class="dropdown-menu">
+          <li>
+            <button class="dropdown-item text-capitalize" type="button" (click)="setLanguage('')">
+              English
+            </button>
+          </li>
 
-          <ng-container *ngFor="let ln of section?.languagesOptions" >
-            <li>
-              <button class="dropdown-item text-capitalize" type="button" (click)="setLanguage(ln.id)">
-                {{ln?.opt}}
-              </button>
-            </li>
-          </ng-container>
         </ul>
       </div>
 
       <div class="d-flex align-items-center justify-content-center" style="width: 4rem;">
-        <div class="fw-medium text-uppercase">{{language}}</div>
+        <div class="fw-medium text-uppercase">En</div>
       </div>
 
       <div class="d-flex">
         <button
         id="light" 
         class="px-3 rounded-start-pill d-flex align-items-center btn-theme"
-        (click)="setTheme($event)">
+        (click)="onChangeTheme($event)">
           <i class="bi bi-brightness-high lh-1"></i>
         </button>
         <button
-        id="dark" (click)="setTheme($event)"
+        id="dark" (click)="onChangeTheme($event)"
         class="px-3 rounded-end-pill d-flex align-items-center btn-theme">
           <i class="bi bi-moon-stars lh-1"></i>
         </button>

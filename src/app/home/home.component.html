@@ -1,8 +1,8 @@
-<div class="hero-container py-5 text-center custom-bg-gradient text-black">
+<div class="p-5 text-center custom-bg-gradient text-black">
 
-    <h2 class="fw-semibold text-uppercase m-0 p-0">{{section?.heroTitle}}</h2>
+    <h2 class="fw-semibold text-uppercase m-0 p-0">Software developer</h2>
     <div class="my-2 fs-5">
-        {{section?.heroText}}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil nesciunt a odio dicta tenetur qui ullam quo repellat obcaecati?
     </div>
 
     
@@ -10,41 +10,54 @@
 
 <div class="my-5">
     <!-- * * * * 2 cards * * * * -->
-    <div class="d-flex flex-column flex-xl-row justify-content-center align-items-center">
 
-        <div class="mx-4 my-2 my-xl-0 rounded-4 py-3 px-4 custom-bg-item d-flex flex-column justify-content-between">
-            <div>
-                <div class="fs-5 text-uppercase">
-                    About me
+    <div class="container-fluid">
+        <div class="row gy-3 gy-lg-0">
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-center justify-content-xl-end h-100">
+
+                    <div class="rounded-4 py-3 px-4 custom-bg-item">
+                        <div>
+                            <div class="fs-5 text-uppercase">
+                                About me
+                            </div>
+                            <div>
+                                <p>I've spent over 5 years learning and working on software development. I consider myself a passionate guy always trying to make high quality works</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-black px-3" [routerLink]="['/about']">Take a look</button>
+                        </div>
+                    </div>
+
                 </div>
-                <div>
-                    <p>I've spent over 5 years learning and working on software development. I consider myself a passionate guy always trying to make high quality works</p>
-                </div>
+                
             </div>
-            <div class="text-center">
-                <button class="btn btn-black px-3" [routerLink]="['/about']">Take a look</button>
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-center justify-content-xl-start h-100">
+
+                    <div class="rounded-4 py-3 px-4 custom-bg-item">
+                        <div>
+                            <div class="fs-5 text-uppercase">
+                                Projects
+                            </div>
+                            <div>
+                                <p>I'm into crafting useful and beautiful web applications considering at first place user needs and ideas</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-black px-3" [routerLink]="['/projects']">Take a look</button>
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
         </div>
-
-        <div class="mx-4 my-2 my-xl-0 rounded-4 py-3 px-4 custom-bg-item d-flex flex-column justify-content-between">
-            <div>
-                <div class="fs-5 text-uppercase">
-                    Check out my projects
-                </div>
-                <div>
-                    <p>I'm into crafting useful and beautiful web applications considering at first place user needs and ideas</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <button class="btn btn-black px-3" [routerLink]="['/projects']">Take a look</button>
-            </div>
-        </div>
-
     </div>
 
-
     <div class="mt-5">
-        <div class="text-container mx-auto text-center">
+        <div class="mx-auto text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ex velit adipisci itaque rem, possimus illo alias, sint at eaque provident corporis, maiores quam. Consequatur rem aperiam voluptatum quam! Quae ipsa, dolorem, ab nisi quibusdam aliquam voluptatibus numquam nesciunt optio autem nihil ratione maxime voluptatum sapiente est cum laudantium sed.
         </div>
     </div>
@@ -58,8 +71,6 @@
         </div>
     </div>
 
-
-    
 </div>
 
 

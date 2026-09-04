@@ -4,12 +4,12 @@
     background-color: var(--bs-primary);
 }
 
-.item{
+.nav-link{
     text-decoration: none;
     transition: background-color 0.2s linear;
 }
 
-.item:hover{
+.nav-link:hover{
     background-color: var(--bs-tertiary)
 }
 
