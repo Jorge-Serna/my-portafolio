@@ -4,5 +4,24 @@
     "ABOUT": "About me",
     "PROJECTS": "Projects",
     "BLOG": "Blog"
+  },
+  "HOME": {
+
+    "TITLE": "Software developer",
+    "SUBTITLE": "I am committed with crafting nice and reliable software"
+
+  },
+  "PROJECTS": {
+    "PROJECT1": {
+      "TITLE": "Employees' management",
+      "PREVIEW": "Web platform for comprehensive management of employee work-related incidents and events Allows users to register, view, and manage vacations, leaves of absence, absences, tardiness, and overtime. Features calendar views and lists for easy event tracking. Includes authentication, role-based access control, and management of information for multiple employees. Developed with Angular, NestJS, TypeORM, and MySQL."
+    },
+    "PROJECT2": {
+      "TITLE": "Employees' management",
+      "PREVIEW": "Web platform for comprehensive management of employee work-related incidents and events Allows users to register, view, and manage vacations, leaves of absence, absences, tardiness, and overtime. Features calendar views and lists for easy event tracking. Includes authentication, role-based access control, and management of information for multiple employees. Developed with Angular, NestJS, TypeORM, and MySQL."
+    }
+  },
+  "BUTTONS": {
+    "BTN_SEE_MORE": "See more"
   }
 }

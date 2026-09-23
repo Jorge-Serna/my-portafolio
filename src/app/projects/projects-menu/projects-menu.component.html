@@ -1,5 +1,5 @@
 
-<div class="container py-5">
+<div class="container my-5">
 
 
     <div class="rounded-4 mb-4">
@@ -13,7 +13,7 @@
 
             <div class="col-12 col-xl-7">
 
-                <div class="fs-4 mb-2">BITACORA DE EMPLEADOS</div>
+                <div class="fs-4 mb-2">{{ 'PROJECTS.PROJECT1.TITLE' | translate }}</div>
                 <div class="d-flex fs-8 mb-2 text-black">
                     <div class="px-2 py-1 rounded-2 me-2 fw-medium bg-blue-100">UX/UI</div>
                     <div class="px-2 py-1 rounded-2 me-2 fw-medium bg-tertiary">Angular</div>
@@ -22,12 +22,12 @@
                     <div class="px-2 py-1 rounded-2 me-2 fw-medium bg-tertiary">MySql</div>
                 </div>
                 <div class="mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi iste quos dolorum, enim in ratione dolore voluptatibus eos sint quidem saepe facere iusto vero quaerat vitae ullam aut tempora quis!
+                    {{ 'PROJECTS.PROJECT1.PREVIEW' | translate }}
                 </div>
 
                 <div>
                     <button class="btn btn-black px-4" [routerLink]="['mbe']">
-                        See more
+                        {{ 'BUTTONS.BTN_SEE_MORE' | translate }}
                     </button>
                 </div>
                 

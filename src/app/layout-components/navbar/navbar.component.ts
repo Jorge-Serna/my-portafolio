@@ -1,37 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from "@angular/router";
-import { NgFor } from '@angular/common';
+import { LanguagesService } from '../../services/languages.service';
+import { CommonModule } from '@angular/common';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
     selector: 'app-navbar',
-    imports: [RouterLink, NgFor],
+    imports: [
+      RouterLink,
+      CommonModule
+    ],
     templateUrl: './navbar.component.html',
     styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
+  currentLang
+  currentTheme
 
-  theme: 'light' | 'dark' = 'light';
-
-
-  ngOnInit(): void {
-
-    // var localTheme = localStorage.getItem(('js-app-theme') as 'light' | 'dark') || 'ligth';
-    // this.theme = localTheme ? localTheme : 'light';
-    
+  constructor( 
+    private languagesService: LanguagesService,
+    private themeService: ThemeService
+  ){
+    this.currentLang = languagesService.currentLang;
+    this.currentTheme = themeService.theme;
   }
 
-  onChangeTheme(e: Event){
-
-    const element = e.target as HTMLElement;
-
-    this.theme = element.id === 'dark' ? 'dark' : 'light';
-
-    document.documentElement.setAttribute('data-bs-theme', this.theme);
-
-    window.localStorage.setItem('js-app-theme', element.id)
-
+  onChangeTheme(th: 'light' | 'dark'){
+    this.themeService.toggleTheme(th);
   }
 
-  setLanguage(sth){}
+  changeLanguage(lang: string){
+    this.languagesService.setLanguage( lang );
+  }
 
 }

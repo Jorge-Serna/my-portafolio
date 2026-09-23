@@ -22,32 +22,36 @@ style="background-color: var(--bs-primary);">
         <div class="d-flex justify-content-center">
 
           <div class="dropdown">
-
             <button class="btn btn-yellow-400 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-globe2"></i>
             </button>
             <ul class="dropdown-menu">
               <li>
-                <button class="dropdown-item text-capitalize" type="button" (click)="setLanguage('')">
+                <button class="dropdown-item text-capitalize" type="button" (click)="changeLanguage('en')">
                   English
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item text-capitalize" type="button" (click)="changeLanguage('es')">
+                  Spanish
                 </button>
               </li>
             </ul>
           </div>
 
           <div class="d-flex align-items-center justify-content-center" style="width: 4rem;">
-            <div class="fw-medium text-uppercase">En</div>
+            <div class="fw-medium text-uppercase">{{currentLang()}}</div>
           </div>
 
           <div class="d-flex">
             <button
             id="light" 
             class="px-3 rounded-start-pill d-flex align-items-center btn-theme"
-            (click)="onChangeTheme($event)">
+            (click)="onChangeTheme('light')">
               <i class="bi bi-brightness-high lh-1"></i>
             </button>
             <button
-            id="dark" (click)="onChangeTheme($event)"
+            id="dark" (click)="onChangeTheme('dark')"
             class="px-3 rounded-end-pill d-flex align-items-center btn-theme">
               <i class="bi bi-moon-stars lh-1"></i>
             </button>
@@ -66,8 +70,21 @@ style="background-color: var(--bs-primary);">
         </button>
         <ul class="dropdown-menu">
           <li>
-            <button class="dropdown-item text-capitalize" type="button" (click)="setLanguage('')">
+            <button 
+            class="dropdown-item text-capitalize" 
+            [class.active]="currentLang() === 'en'"
+            type="button" 
+            (click)="changeLanguage('en')">
               English
+            </button>
+          </li>
+          <li>
+            <button 
+            class="dropdown-item text-capitalize" 
+            [class.active]="currentLang() === 'es'"
+            type="button" 
+            (click)="changeLanguage('es')">
+              Spanish
             </button>
           </li>
 
@@ -75,19 +92,24 @@ style="background-color: var(--bs-primary);">
       </div>
 
       <div class="d-flex align-items-center justify-content-center" style="width: 4rem;">
-        <div class="fw-medium text-uppercase">En</div>
+        <div class="fw-medium text-uppercase">{{currentLang()}}</div>
       </div>
 
       <div class="d-flex">
         <button
         id="light" 
-        class="px-3 rounded-start-pill d-flex align-items-center btn-theme"
-        (click)="onChangeTheme($event)">
+        class="rounded-start-pill d-flex justify-content-center align-items-center btn-theme"
+        [class.text-gray-500]="currentTheme() !== 'light'"
+        [class.text-black]="currentTheme() === 'light'"
+        (click)="onChangeTheme('light')">
           <i class="bi bi-brightness-high lh-1"></i>
         </button>
         <button
-        id="dark" (click)="onChangeTheme($event)"
-        class="px-3 rounded-end-pill d-flex align-items-center btn-theme">
+        id="dark"
+        class="rounded-end-pill d-flex justify-content-center align-items-center btn-theme"
+        [class.text-gray-500]="currentTheme() !== 'dark'"
+        [class.text-white]="currentTheme() === 'dark'"
+        (click)="onChangeTheme('dark')">
           <i class="bi bi-moon-stars lh-1"></i>
         </button>
       </div>

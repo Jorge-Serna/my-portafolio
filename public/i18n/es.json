@@ -4,5 +4,24 @@
     "ABOUT": "Sobre mí",
     "PROJECTS": "Proyectos",
     "BLOG": "Blog"
+  },
+  "HOME": {
+
+    "TITLE": "Desarrollador de software",
+    "SUBTITLE": "Comprometido con la creación de software"
+
+  },
+  "PROJECTS": {
+    "PROJECT1": {
+      "TITLE": "Bitacora de empleados",
+      "PREVIEW": "Plataforma web para la gestión integral de incidencias y eventos laborales de empleados.Permite registrar, consultar y administrar vacaciones, permisos, faltas, retardos y tiempo extra. Cuenta con vistas de calendario y listas para facilitar el seguimiento de eventos. Incluye autenticación, control de acceso por roles y gestión de información de distintos empleados. Desarrollada con Angular, NestJS, TypeORM y MySQL."
+    },
+    "PROJECT2": {
+      "TITLE": "Bitacora de empleados",
+      "PREVIEW": "Plataforma web para la gestión integral de incidencias y eventos laborales de empleados.Permite registrar, consultar y administrar vacaciones, permisos, faltas, retardos y tiempo extra. Cuenta con vistas de calendario y listas para facilitar el seguimiento de eventos. Incluye autenticación, control de acceso por roles y gestión de información de distintos empleados. Desarrollada con Angular, NestJS, TypeORM y MySQL."
+    }
+  },
+  "BUTTONS": {
+    "BTN_SEE_MORE": "Ver más"
   }
 }

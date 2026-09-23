@@ -2,19 +2,6 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-
-
-@include font-face('quicksand', '/quicksand-font/Quicksand-Light.ttf', 300);
-@include font-face('quicksand', '/quicksand-font/Quicksand-Regular.ttf', 400);
-@include font-face('quicksand', '/quicksand-font/Quicksand-Medium.ttf', 500);
-@include font-face('quicksand', '/quicksand-font/Quicksand-SemiBold.ttf', 600);
-@include font-face('quicksand', '/quicksand-font/Quicksand-Bold.ttf', 700);
-
-
-:root {
-  --bs-font-sans-serif: 'quicksand', sans-serif, Arial;
-}
-
 $primary: #ffffff;
 $secondary: #ff6a00;
 $tertiary: #ffe5d2;
@@ -53,6 +40,17 @@ $theme-colors: (
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+// @include font-face('quicksand', '/quicksand-font/Quicksand-Light.ttf', 300);
+// @include font-face('quicksand', '/quicksand-font/Quicksand-Regular.ttf', 400);
+// @include font-face('quicksand', '/quicksand-font/Quicksand-Medium.ttf', 500);
+// @include font-face('quicksand', '/quicksand-font/Quicksand-SemiBold.ttf', 600);
+// @include font-face('quicksand', '/quicksand-font/Quicksand-Bold.ttf', 700);
+
+
+// :root {
+//   --bs-font-sans-serif: 'quicksand', sans-serif, Arial;
+// }
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -72,7 +70,9 @@ $theme-colors: (
   --bs-body-bg: #ffffff;
   --bs-body-color: #000000;
   --btn-toggle-theme: #ffe5d2;
+  --btn-theme-shadow: #f57f7f;
   --bs-nav-link-color: var(--bs-body-color);
+  --bs-dropdown-link-active-bg: var(--bs-secondary);
 }
 
 [data-bs-theme="dark"] {
@@ -82,7 +82,9 @@ $theme-colors: (
   --bs-body-bg: #483888;
   --bs-body-color: #ffffff;
   --btn-toggle-theme: #6959a2;
+  --btn-theme-shadow: #867ca9;
   --bs-nav-link-color: var(--bs-body-color);
+  --bs-dropdown-link-active-bg: var(--bs-secondary);
 }
 
 // .bg-tertiary{
